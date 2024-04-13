@@ -8,7 +8,7 @@ services:
       - NODE_ENV=development
       - DB_HOST=host.docker.internal
       - DB_USER=root
-      - DB_PASSWORD=D4t4b4s3$2024
+      - DB_PASSWORD=
       - DB_NAME=my_store
       - JWT_SECRET = ASAFSDLKJFINF
   microservice:
@@ -19,5 +19,5 @@ services:
       - NODE_ENV=development
       - DB_HOST=host.docker.internal
       - DB_USER=root
-      - DB_PASSWORD=D4t4b4s3$2024
+      - DB_PASSWORD=
       - DB_NAME=my_store
