@@ -1,0 +1,23 @@
+version: '1'
+services: 
+  monolith:
+    build: ./monolith2
+    ports:
+      - "8000:3005"
+    environment:
+      - NODE_ENV=development
+      - DB_HOST=host.docker.internal
+      - DB_USER=root
+      - DB_PASSWORD=D4t4b4s3$2024
+      - DB_NAME=my_store
+      - JWT_SECRET = ASAFSDLKJFINF
+  microservice:
+    build: ./microservice
+    ports:
+      - "8001:3006"
+    environment:
+      - NODE_ENV=development
+      - DB_HOST=host.docker.internal
+      - DB_USER=root
+      - DB_PASSWORD=D4t4b4s3$2024
+      - DB_NAME=my_store
